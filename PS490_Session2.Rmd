@@ -1,0 +1,293 @@
+---
+title: "Session 2"
+author: "PS 490"
+date: ""
+output: 
+  xaringan::moon_reader:
+    seal: true 
+    css: custom_2.css
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
+library(tidyverse)
+library(haven)
+```
+# Objectives for today 
+
+1. Creating tables
+2. Describing data and variables 
+
+---
+# Loading gapminder 
+
+For today's workshop, we will first be using the dataset `gapminder`, so let's load that first and create an object with the dataset. 
+
+```{r}
+library(gapminder)
+country_data <- gapminder
+```
+
+---
+# Side note: packages
+
+If you load a library without installing it first, you will get this error:
+
+```{r error= TRUE}
+library(BioConductor)
+```
+
+--
+If you try to run a command from a package without loading it first, you will get this error:
+
+```{r error=TRUE}
+stargazer(mtcars)
+```
+---
+# Tables 
+
+Indexing is also helpful to create tables in Base R. 
+
+One-way tables are useful to see the values the variable takes on and how it is distributed.
+
+```{r}
+table(country_data$continent)
+```
+
+Compare this with `test_data$continent`
+
+---
+# Tables
+
+Two-way tables allow us to see how two variables are related to each other. 
+
+Let's see how many observations(continent) we have per year:
+
+```{r}
+table(country_data$continent, country_data$year)
+```
+
+---
+# Tables
+
+Often, it will be more informative to see these numbers as proportions.
+
+To do this, we simply add `prop.table` to the command above:
+
+```{r}
+prop.table(table(country_data$continent, country_data$year))
+```
+---
+# Tables
+
+Play around with the options 1 and 2 
+
+```{r}
+prop.table(table(country_data$continent, country_data$year),1)
+```
+
+---
+# Nicer tables 
+
+One way to make these tables look nicer is with the `kable` command from the `knitr` package. This is most useful when you are working on R Markdown or Latex. 
+
+It is very flexible, can output in different styles, change column names, alignment, etc. 
+
+---
+# Nicer tables
+
+```{r}
+library(knitr)
+kable(table(country_data$continent, country_data$year), "html")
+```
+
+---
+# Nicer tables
+
+Another great package is `stargazer`, esp. for summary statistics and regression tables
+
+As with `kable`, we can choose outputs in html, simple text, or latex
+
+When given a dataframe, it automatically spits out the descriptive statistics
+
+---
+# Nicer tables
+
+```{r}
+library(stargazer)
+stargazer(as.data.frame(country_data), type = "text")
+```
+
+---
+# Nicer tables
+
+For regression results:
+
+```{r}
+model_simple <- lm(lifeExp ~ gdpPercap, data = country_data)
+model_full <- lm(lifeExp ~ gdpPercap + pop, data = country_data)
+```
+
+---
+```{r}
+stargazer(model_simple, model_full, type = "text")
+```
+
+---
+# Loading datasets from files
+
+1) Set your working directory 
+
+```{r, eval=FALSE}
+setwd("")
+```
+
+Windows users: change backslash for front slash
+
+To see where you are now: 
+```{r, eval = FALSE}
+getwd()
+```
+
+---
+# Loading dataset from file
+
+2) Match command with file type (and library!): 
+
+- `haven` for read_dta 
+- `readr` for read_csv
+- `readxl` for read_xlsx
+
+Note1: many of these part of tidyverse collection
+
+Note2: many have equivalent functions in base R, but these are faster
+
+---
+# Loading dataset from file
+
+```{r}
+library(readr)
+drugs_data <- read_csv("drugs.csv")
+```
+
+Common mistakes: 
+- Not including quotations
+- Not including file extension (.csv)
+- Misspelling file name 
+
+---
+# Exploring datasets 
+
+Every time we upload a dataset, first become familiarized with it:
+
+`names`, `head`, `View`, `str`
+
+---
+# Exploring variables
+
+Also a good idea to always explore the specific variable you are interested in.
+
+- get a table 
+- get descriptives
+- draw graphs
+- look for: answer choices, outliers, NAs, labels, distribution
+
+---
+# Exploring variables
+
+```{r}
+table(drugs_data$mjage)
+summary(drugs_data$mjage)
+```
+
+---
+# Exploring variables: visualization
+
+Visualization is key! 
+
+You will learn how to do beautiful graphs with ggplot in future weeks, but for quick graphs we can always use Base R:
+
+- Histogram: hist()
+- Scatter plot: plot()
+- Boxplot: boxplot()
+- Bar graph: barplot()
+
+---
+# Exploring variables: visualization
+
+.pull-left[
+```{r, eval = FALSE}
+hist(drugs_data$mjage)
+```
+]
+
+.pull-right[
+```{r, echo = FALSE}
+hist(drugs_data$mjage)
+```
+]
+
+---
+# Exploring variables: visualization 
+
+.pull-left[
+```{r, eval=FALSE}
+boxplot(drugs_data$mjage ~ drugs_data$health_cond)
+
+# ALT:
+# boxplot(mjage ~ health_cond, data = drugs_data)
+
+```
+]
+
+.pull-right[
+```{r, echo=FALSE}
+boxplot(drugs_data$mjage ~ drugs_data$health_cond)
+```
+]
+
+---
+# Exploring variables: visualization
+
+.pull-left[
+```{r, eval= FALSE}
+
+health_cond_freq <- table(drugs_data$health_cond)
+
+barplot(health_cond_freq)
+```
+]
+
+.pull-right[
+```{r, echo=FALSE}
+health_cond_freq <- table(drugs_data$health_cond)
+barplot(health_cond_freq)
+```
+
+]
+---
+class: inverse
+
+# Practice
+
+.small[
+1) Explore the variable cigtry. Are there any outliers? What is the average age at which people try cigarettes (cigtry)? 
+
+2) Is there an association between Health Condition (health_cond) and level of education (educ)? Draw a table between these two variables: 
+- one table with # of observations
+- one with proportions
+
+3) Is the age at which you tried cigarettes associated with the age at which you tried marijuana? Run a regression predicting mjage with cigtry. Export this with stargazer. 
+
+4) Use the plot() command to draw a scatter plot between mjage and cigtry
+]
+
+
+
+
