@@ -1,0 +1,427 @@
+---
+title: "Session 1"
+author: "PS 490"
+date: ""
+output: 
+  xaringan::moon_reader:
+    seal: true 
+    css: custom_2.css
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
+library(tidyverse)
+library(haven)
+```
+# Objectives for today 
+
+1. Recap the very basics of R
+2. Indexing
+3. Creating tables 
+
+---
+# R and R studio
+
+```{r  out.height="100%", out.width="100%", echo=FALSE}
+knitr::include_graphics("img/rpic.png") 
+```
+
+Source: Modern Drive
+
+---
+# R Studio 
+
+```{r  out.height="60%", out.width="60%", echo=FALSE}
+knitr::include_graphics("img/r.png") 
+```
+
+---
+# R Markdown
+
+Within R Studio, we can create a type of document called Markdown. 
+
+- Neat way of combining code + text 
+
+- Used for final documents/presentation of results/assignments 
+
+- Has a visual editor that makes it look like a normal word processor
+
+---
+# R as a calculator
+
+```{r}
+2+2
+2/3
+log(10)
+abs(-1)
+sqrt(9)
+```
+
+---
+# Logical statements
+
+.med[Common logical operators: 
+
+  - == (is equal)
+  - != (not equal)
+  - < (greater than), > (less than)
+  - & (and), | (or)
+]
+
+---
+# Logical statements
+
+```{r}
+1 < 2
+
+1 == 2
+
+2 != 2
+
+1 > 0 & 2 > 0
+
+1 < 0 | 2 <= 3
+```
+
+---
+# The Grammar of R
+
+Verb(noun, adjective) is the same as
+
+.green[***function(object, other arguments)***]
+
+The other argument (adjective) is not always necessary
+
+---
+# Functions
+
+Like in math: input, output 
+
+Actions that you want R to carry out 
+
+eg. `mean()`
+
+---
+
+# Objects
+
+R is based on objects: variables, functions, dataframes, etc.
+
+We usually want to store objects so we can work with them later. We do this by attributing a name to that object. 
+
+```{r}
+big_number <- 12345.6789
+```
+
+Check out your Environment! 
+
+---
+# Objects 
+
+Objects can be of different types (or "class")
+
+
+Most common class of objects: numeric, character, logical, matrix, data.frame, list, function.
+
+---
+# Objects 
+
+```{r}
+year <- 2021
+class(year)
+```
+
+--
+
+```{r}
+course_name <- "PS 409"
+class(course_name)
+```
+
+
+---
+# Vectors (combining objects)
+
+A vector is a combination of more than one object (of the same class). We can create vectors with c() which stands for "combine". 
+
+```{r}
+courses <- c("PS 403", "PS 405", "PS 406")
+class(courses)
+```
+--
+
+```{r}
+avg_grade <- c(88, 95, 82)
+class(avg_grade)
+```
+
+---
+# Class matters 
+
+Why does object class matter?
+
+What R can do depends on the class. 
+
+Let's say for some reason our grade data was imported as character: 
+```{r}
+chr_grade <- c("88", "89", "94")
+mean(chr_grade)
+```
+
+---
+# Summary stats 
+
+With numeric variables, we can run the following commands to get descriptive statistics: 
+
+- `mean`, `sd`, `max`, `min` ... 
+
+- `summary` gives them all at once
+
+---
+# Datasets (combining vectors)
+
+  - Data frames are the core data structure in R
+  
+  - Data frames are .green[heterogenous]: the vectors in a data frames can each be of a different data type.
+  
+  - Columns are typically variables and rows are observations.
+  
+---
+# Datasets 
+
+```{r}
+dataset <- data.frame(courses = c("PS 403", "PS 405", "PS 406"), 
+                 avg_grade = c(88, 95, 82))
+dataset
+```
+
+---
+# Indexing
+
+Data frames (and any other object) can be indexed by using variable/column names: `df$var` or `df["var"]`.
+
+```{r, eval=FALSE}
+dataset[1]
+
+dataset["courses"]
+
+dataset$courses
+
+```
+
+---
+# Indexing
+
+The indexing can be conditional too (and can include more than one condition).
+
+Note the structure: 
+
+```{r}
+dataset$avg_grade[dataset$courses == "PS 403"]
+```
+
+---
+# Side note: packages
+
+Let's practice indexing with the Gapminder dataset. For this, we need to install and load the package called `gapminder`
+
+
+Recap: 
+
+| On phone     | On R                 |
+|--------------|----------------------|
+| Download app | install.packages("") |
+| Open app     | library()            |
+
+---
+# Side note: packages
+
+If you load a library without installing it first, you will get this error:
+
+```{r error= TRUE}
+library(BioConductor)
+```
+
+--
+If you try to run a command from a package without loading it first, you will get this error:
+
+```{r error=TRUE}
+stargazer(mtcars)
+```
+
+---
+# Indexing 
+
+Back to indexing: 
+
+```{r}
+library(gapminder)
+
+test_data <- gapminder 
+```
+
+---
+# Indexing
+
+First, let's explore the dataset. Try out the commands: `head`, `names`, `View`. 
+
+```{r}
+head(test_data)
+```
+
+---
+class: inverse
+
+# Indexing
+
+1. Index the "country" variable. (Is this helpful?)
+
+2. Look for the gdpPercap for Mexico. (Is this helpful?)
+
+3. Look for the gdpPercap for Mexico in 2007
+
+BONUS. Get the mean of the gdpPercap for the all countries in 2007
+
+---
+class: inverse
+
+# Indexing
+
+1. Index the "country" variable. (Is this helpful?)
+
+```{r}
+test_data$country 
+#test_data["country"]
+```
+---
+class: inverse
+
+# Indexing
+
+2. Look for the gdpPercap for Mexico. (Is this helpful?)
+
+```{r}
+test_data$gdpPercap[test_data$country=="Mexico"]
+```
+
+---
+class: inverse
+
+# Indexing
+
+3. Look for the gdpPercap for Mexico in 2007
+
+```{r}
+test_data$gdpPercap[test_data$country=="Mexico" & test_data$year==2007]
+```
+
+---
+# Indexing
+
+BONUS
+
+```{r}
+mean(test_data$gdpPercap[test_data$year==2007])
+```
+
+---
+# Indexing
+
+This is also helpful in other ocassions 
+
+```{r}
+reg1 <- lm(lifeExp ~ gdpPercap, data= test_data)
+```
+
+Type `reg1$` and see what options show up. 
+
+
+---
+# Tables 
+
+Indexing is also helpful to create tables in Base R. 
+
+One-way tables are useful to see the values the variable takes on and how it is distributed.
+
+```{r}
+table(test_data$continent)
+```
+
+Compare this with `test_data$continent`
+
+---
+# Tables
+
+Two way tables allow us to see how two variables are related to each other. 
+
+Let's see how many observations(continent) we have per year:
+
+```{r}
+table(test_data$continent, test_data$year)
+```
+
+---
+# Tables
+
+Often, it will be more informative to see these numbers as proportions.
+
+To do this, we simply add `prop.table` to the command above:
+
+```{r}
+prop.table(table(test_data$continent, test_data$year))
+```
+---
+# Tables
+
+To do this, we simply add `prop.table` to the command above.
+
+```{r}
+prop.table(table(test_data$continent, test_data$year),1)
+```
+
+
+---
+# Loading dataset from file
+
+1) Set your working directory (or create a R Project)
+
+```{r, eval=FALSE}
+setwd("")
+
+getwd()
+```
+
+2) Match command with file type (and library!): read_csv, read_xlsx, read_dta... 
+
+---
+# Loading dataset from file
+
+```{r}
+library(readr)
+drugs_data <- read_csv("drugs.csv")
+```
+
+Common mistakes: 
+- Not including quotations
+- Not including file extension (.csv)
+- Misspelling file name 
+
+---
+class: inverse
+
+# Practice
+
+1) Explore the dataset using `names`, `head`, or `View`. What is the dataset about? What are the rows/columns?
+
+2) What is the average age at which people try cigarettes (cigtry)? 
+
+3) Is there an association between Health Condition (health_cond) and level of education (educ)? Draw a table between these two variables. 
+
+
+
