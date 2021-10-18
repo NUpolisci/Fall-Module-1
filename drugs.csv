@@ -1,0 +1,284 @@
+sex,sexage_rec,health_cond,educ,mjday30a,mjage,alctry,cigtry,smklsstry,oxcnnmage,mjmfu,poverty3,irfamin3,cig30use,mjever,age2,smklss30n
+Male,Males Aged 18-25,Very Good,Some coll/Assoc,26,14,9,14,15,991,99,3,6,1,1,8,93
+Female,Females Aged 12-17,Very Good,12-17yrsold,3,15,16,14,991,991,99,1,2,93,1,6,91
+Male,Other,Good,Less HS,30,16,19,17,21,991,99,3,7,30,1,13,93
+Female,Other,Excellent,Some coll/Assoc,9,16,15,18,991,993,99,3,3,30,1,13,91
+Female,Other,Excellent,College grad,7,16,16,9,991,991,99,3,7,1,1,14,91
+Male,Other,Good,Some coll/Assoc,25,16,15,16,991,991,99,3,6,93,1,13,91
+Male,Males Aged 12-17,Very Good,12-17yrsold,12,12,4,10,991,991,1,1,2,4,1,2,91
+Female,Other,Very Good,College grad,2,15,14,15,991,991,99,3,7,93,1,14,91
+Male,Other,Good,College grad,30,20,20,18,21,991,99,1,1,20,1,13,93
+Female,Females Aged 12-17,Very Good,12-17yrsold,16,13,15,13,985,991,99,3,6,22,1,6,93
+Female,Other,Very Good,Some coll/Assoc,28,22,24,14,991,991,99,1,1,93,1,13,91
+Female,Females Aged 18-25,Good,College grad,2,21,16,20,991,993,99,2,5,93,1,12,91
+Male,Other,Very Good,HS grad,10,16,16,16,991,991,99,3,7,93,1,15,91
+Male,Males Aged 12-17,Very Good,12-17yrsold,30,15,15,14,991,993,5,1,2,5,1,5,91
+Female,Females Aged 12-17,Good,12-17yrsold,13,15,16,17,991,991,99,2,6,1,1,6,91
+Male,Other,Excellent,College grad,3,18,18,25,991,991,99,3,6,93,1,13,91
+Male,Males Aged 18-25,Very Good,HS grad,12,15,12,10,10,19,99,3,7,12,1,11,30
+Female,Other,Very Good,Some coll/Assoc,1,17,15,18,17,991,99,3,6,93,1,15,93
+Female,Other,Very Good,Some coll/Assoc,2,18,16,15,991,993,99,3,7,93,1,15,91
+Male,Males Aged 18-25,Good,HS grad,7,13,14,18,18,991,99,NA,1,1,1,8,93
+Male,Other,Fair/Poor,Less HS,30,18,20,15,18,991,99,1,2,18,1,16,93
+Male,Other,Very Good,Some coll/Assoc,23,14,12,13,14,993,99,2,4,30,1,15,93
+Female,Other,Very Good,College grad,30,15,11,13,991,991,99,3,6,93,1,14,91
+Male,Males Aged 12-17,Good,12-17yrsold,2,13,9,10,991,991,99,2,3,1,1,4,91
+Male,Males Aged 18-25,Very Good,College grad,6,16,18,18,20,993,99,1,2,10,1,12,93
+Female,Females Aged 18-25,Very Good,HS grad,20,12,12,14,991,993,99,1,2,3,1,8,91
+Female,Other,Fair/Poor,HS grad,4,30,25,27,991,991,99,2,3,30,1,16,91
+Female,Other,Very Good,College grad,20,15,13,16,991,993,99,3,7,30,1,14,91
+Male,Other,Very Good,Some coll/Assoc,6,23,18,23,991,991,99,3,5,30,1,13,91
+Male,Other,Excellent,Some coll/Assoc,5,13,NA,15,991,991,99,3,4,93,1,15,91
+Male,Males Aged 18-25,Very Good,Some coll/Assoc,2,17,16,17,991,993,99,2,4,30,1,12,91
+Male,Other,Very Good,HS grad,25,12,17,15,991,993,99,3,6,30,1,14,91
+Male,Males Aged 18-25,Good,Some coll/Assoc,1,20,19,18,991,991,11,2,5,93,1,9,91
+Male,Other,Very Good,College grad,12,20,15,25,991,991,99,3,7,93,1,17,91
+Female,Females Aged 18-25,Good,Some coll/Assoc,5,18,17,18,991,991,99,3,5,93,1,11,91
+Male,Other,Fair/Poor,Some coll/Assoc,4,79,18,14,991,991,8,3,7,93,1,17,91
+Male,Males Aged 18-25,Excellent,HS grad,30,9,10,15,19,991,99,3,5,30,1,10,93
+Male,Other,Excellent,Some coll/Assoc,30,18,18,18,19,993,99,3,6,30,1,14,93
+Female,Other,Very Good,College grad,1,18,17,14,991,991,99,3,3,30,1,16,91
+Male,Males Aged 18-25,Very Good,Less HS,15,15,15,18,991,993,99,2,2,30,1,12,91
+Female,Females Aged 18-25,Excellent,Some coll/Assoc,4,17,16,14,991,991,99,3,6,93,1,8,91
+Female,Other,Very Good,College grad,5,18,17,12,991,991,99,3,7,93,1,15,91
+Male,Other,Very Good,College grad,15,24,21,20,43,991,99,3,7,93,1,17,93
+Male,Males Aged 18-25,Very Good,HS grad,15,12,12,5,991,991,99,2,3,2,1,11,91
+Male,Other,Excellent,College grad,15,15,13,12,14,993,99,3,7,10,1,15,93
+Male,Males Aged 18-25,Good,HS grad,21,12,16,12,991,991,99,3,7,25,1,11,91
+Male,Males Aged 12-17,Good,12-17yrsold,10,14,15,16,991,993,99,3,7,93,1,6,91
+Male,Males Aged 18-25,Very Good,HS grad,30,15,NA,15,14,993,99,3,5,93,1,8,93
+Male,Males Aged 18-25,Good,Some coll/Assoc,26,18,18,20,991,991,99,3,7,13,1,10,91
+Male,Males Aged 18-25,Very Good,HS grad,9,18,18,19,991,991,1,2,4,93,1,8,91
+Male,Males Aged 18-25,Good,HS grad,2,17,NA,19,991,991,99,3,6,93,1,11,91
+Female,Other,Good,College grad,28,17,11,15,991,991,99,2,4,1,1,14,91
+Female,Females Aged 18-25,Good,HS grad,20,14,14,12,15,991,99,3,6,30,1,7,93
+Female,Other,Very Good,Some coll/Assoc,8,19,16,20,991,991,99,2,5,28,1,15,91
+Male,Males Aged 18-25,Very Good,HS grad,30,12,14,18,991,991,99,2,3,2,1,10,91
+Male,Other,Fair/Poor,Less HS,30,9,NA,6,15,993,99,1,2,30,1,13,30
+Male,Other,Fair/Poor,HS grad,30,21,15,13,991,991,99,2,2,1,1,15,91
+Male,Other,Excellent,Some coll/Assoc,17,13,16,14,25,991,99,2,2,93,1,14,93
+Female,Females Aged 18-25,Very Good,HS grad,30,12,16,12,991,991,99,1,2,93,1,9,91
+Male,Other,Very Good,College grad,30,20,16,20,991,991,99,3,6,30,1,17,91
+Female,Other,Very Good,College grad,1,16,15,21,991,991,99,3,7,93,1,13,91
+Male,Other,Good,Some coll/Assoc,10,15,16,18,26,991,99,3,5,93,1,13,93
+Male,Other,Fair/Poor,Some coll/Assoc,29,17,19,18,991,993,99,3,7,93,1,14,91
+Female,Females Aged 18-25,Good,Some coll/Assoc,30,13,12,12,991,993,99,3,6,93,1,10,91
+Male,Males Aged 18-25,Excellent,Less HS,4,18,20,18,991,991,99,1,3,93,1,9,91
+Female,Females Aged 12-17,Good,12-17yrsold,3,15,16,16,991,991,6,3,6,93,1,5,91
+Male,Other,Very Good,HS grad,30,10,12,22,991,991,99,3,4,30,1,13,91
+Male,Other,Excellent,College grad,30,21,18,21,991,993,99,3,7,93,1,14,91
+Female,Other,Good,College grad,2,22,11,13,991,991,99,3,7,1,1,14,91
+Female,Females Aged 18-25,Very Good,College grad,20,16,15,18,991,991,99,3,7,93,1,11,91
+Male,Other,Very Good,Some coll/Assoc,30,12,8,10,991,991,99,3,6,93,1,15,91
+Female,Females Aged 12-17,Good,12-17yrsold,30,14,NA,14,991,991,99,3,5,2,1,5,91
+Male,Other,Good,College grad,3,14,12,14,13,993,99,2,2,30,1,15,93
+Male,Other,Very Good,College grad,1,20,18,16,991,991,99,3,7,93,1,14,91
+Male,Males Aged 18-25,Very Good,HS grad,30,13,18,10,12,991,99,2,2,20,1,11,93
+Male,Males Aged 12-17,Very Good,12-17yrsold,16,13,16,15,991,993,99,2,3,25,1,6,91
+Male,Males Aged 18-25,Good,HS grad,5,14,13,19,991,993,99,2,2,15,1,10,91
+Female,Females Aged 12-17,Very Good,12-17yrsold,3,16,14,15,991,991,5,3,7,2,1,6,91
+Female,Other,Fair/Poor,College grad,20,16,13,15,991,991,99,3,4,93,1,17,91
+Female,Females Aged 18-25,Very Good,Some coll/Assoc,2,19,13,18,991,993,99,1,1,93,1,11,91
+Male,Other,Good,College grad,7,20,18,18,991,991,99,3,6,30,1,15,91
+Male,Other,Good,Some coll/Assoc,30,21,18,25,991,991,99,3,7,93,1,16,91
+Female,Other,Very Good,College grad,10,16,13,14,991,991,99,3,7,93,1,15,91
+Female,Females Aged 18-25,Very Good,HS grad,3,14,13,14,14,991,99,3,6,93,1,12,93
+Male,Males Aged 18-25,Very Good,HS grad,25,16,7,9,10,991,99,3,7,28,1,9,15
+Female,Females Aged 18-25,Good,HS grad,3,13,13,13,23,993,99,3,7,30,1,12,93
+Female,Females Aged 18-25,Good,HS grad,6,14,15,12,991,993,99,2,5,30,1,11,91
+Male,Other,Good,College grad,1,15,16,14,991,991,99,3,7,5,1,13,91
+Male,Males Aged 18-25,Very Good,College grad,10,15,15,15,16,991,99,1,2,30,1,8,93
+Male,Males Aged 18-25,Very Good,Less HS,7,10,13,14,15,993,99,3,7,30,1,8,93
+Male,Other,Very Good,HS grad,30,13,15,15,21,991,99,1,2,30,1,14,2
+Male,Males Aged 18-25,Excellent,Some coll/Assoc,10,13,16,13,991,993,99,3,4,93,1,10,91
+Male,Other,Good,Less HS,30,13,14,14,991,991,99,1,1,30,1,15,91
+Male,Males Aged 18-25,Very Good,HS grad,15,16,12,18,991,991,99,2,3,30,1,12,91
+Female,Other,Fair/Poor,Less HS,30,13,12,14,991,993,99,1,2,30,1,15,91
+Male,Males Aged 18-25,Excellent,Less HS,30,7,13,7,991,991,99,3,4,30,1,11,91
+Male,Males Aged 18-25,Very Good,HS grad,1,11,11,11,11,993,99,1,2,30,1,12,4
+Female,Other,Good,Some coll/Assoc,30,18,17,19,991,991,99,2,4,93,1,15,91
+Male,Other,Very Good,HS grad,30,17,18,18,991,991,99,1,2,30,1,14,91
+Male,Other,Fair/Poor,College grad,4,21,18,17,991,991,99,2,2,2,1,13,91
+Female,Females Aged 18-25,Excellent,HS grad,20,14,14,12,13,17,99,3,6,30,1,11,93
+Female,Other,Very Good,HS grad,30,13,13,13,991,991,99,2,4,30,1,15,91
+Female,Females Aged 12-17,Very Good,12-17yrsold,30,13,13,14,991,991,4,3,7,93,1,3,91
+Female,Other,Very Good,College grad,1,20,18,20,991,991,99,3,6,93,1,13,91
+Male,Other,Excellent,HS grad,3,4,10,3,991,991,99,1,1,30,1,16,91
+Male,Males Aged 18-25,Very Good,Less HS,30,16,18,18,991,991,99,1,2,30,1,12,91
+Female,Other,Good,Some coll/Assoc,20,21,18,17,991,991,99,2,5,93,1,14,91
+Female,Other,Fair/Poor,Some coll/Assoc,30,16,10,16,991,991,99,3,5,93,1,16,91
+Male,Other,Very Good,Some coll/Assoc,3,16,16,13,21,993,99,2,4,93,1,15,93
+Male,Males Aged 12-17,Good,12-17yrsold,28,14,12,9,10,991,99,3,7,5,1,6,30
+Male,Other,Fair/Poor,Some coll/Assoc,2,16,14,14,991,991,99,2,2,30,1,16,91
+Male,Males Aged 12-17,Very Good,12-17yrsold,20,15,15,15,991,993,99,1,2,93,1,6,91
+Female,Other,Very Good,College grad,2,16,15,16,16,993,99,3,6,93,1,14,93
+Male,Males Aged 12-17,Excellent,12-17yrsold,20,15,15,16,991,991,99,3,7,93,1,6,91
+Male,Males Aged 12-17,Very Good,12-17yrsold,1,14,14,15,15,993,99,3,7,1,1,5,93
+Male,Other,Very Good,Less HS,30,18,17,25,991,991,99,3,7,30,1,15,91
+Female,Females Aged 18-25,Good,Less HS,15,17,18,18,991,991,99,2,3,93,1,8,91
+Male,Other,Very Good,College grad,4,12,11,10,14,993,99,3,7,30,1,14,93
+Male,Males Aged 18-25,Very Good,Some coll/Assoc,1,21,18,19,20,993,99,3,6,25,1,11,93
+Male,Other,Excellent,Some coll/Assoc,12,18,16,17,18,993,99,3,5,93,1,14,30
+Male,Other,Very Good,College grad,30,15,14,17,17,991,99,3,4,30,1,14,93
+Male,Other,Good,Some coll/Assoc,30,15,15,14,991,993,99,3,7,93,1,15,91
+Male,Males Aged 18-25,Good,HS grad,28,16,14,15,16,991,99,3,6,2,1,8,29
+Female,Females Aged 18-25,Fair/Poor,Some coll/Assoc,2,12,16,15,991,993,99,2,7,30,1,12,91
+Male,Males Aged 18-25,Very Good,Less HS,12,13,14,15,991,991,99,1,2,10,1,11,91
+Female,Other,Good,College grad,30,14,10,14,991,991,99,1,2,30,1,16,91
+Male,Males Aged 12-17,Excellent,12-17yrsold,2,11,11,12,991,991,99,1,2,1,1,2,91
+Female,Other,Very Good,College grad,12,16,13,15,991,993,99,3,7,93,1,15,91
+Male,Males Aged 18-25,Very Good,Less HS,30,15,16,15,15,991,99,2,4,30,1,11,93
+Female,Females Aged 18-25,Very Good,HS grad,5,19,15,18,991,991,6,3,7,93,1,9,91
+Female,Females Aged 12-17,Excellent,12-17yrsold,1,15,13,13,991,991,89,3,7,93,1,6,91
+Male,Other,Very Good,Less HS,7,19,19,22,991,991,99,3,6,93,1,13,91
+Male,Other,Good,Some coll/Assoc,22,16,16,12,18,991,99,3,7,93,1,15,93
+Female,Other,Fair/Poor,Less HS,5,12,21,18,991,991,99,1,2,20,1,15,91
+Female,Other,Very Good,HS grad,30,13,4,10,991,991,99,3,6,30,1,15,91
+Male,Other,Very Good,College grad,30,16,15,20,17,993,99,3,5,93,1,13,93
+Male,Males Aged 12-17,Fair/Poor,12-17yrsold,30,11,10,11,11,993,99,3,7,93,1,6,93
+Female,Other,Fair/Poor,Some coll/Assoc,1,14,12,15,991,993,99,1,2,93,1,15,91
+Female,Other,Very Good,College grad,12,18,18,13,21,991,99,3,7,93,1,15,93
+Male,Males Aged 18-25,Excellent,College grad,27,19,19,19,17,991,99,3,6,2,1,12,3
+Male,Other,Good,Some coll/Assoc,1,15,15,15,991,993,99,3,4,93,1,16,91
+Female,Females Aged 18-25,Good,College grad,30,16,16,18,19,991,99,2,3,93,1,11,93
+Female,Other,Good,HS grad,27,20,21,16,991,991,99,1,3,93,1,13,91
+Male,Other,Fair/Poor,Less HS,1,10,12,12,991,991,99,3,5,93,1,13,91
+Female,Females Aged 18-25,Good,Some coll/Assoc,1,19,15,19,21,991,99,3,7,93,1,10,2
+Male,Other,Fair/Poor,Some coll/Assoc,30,15,15,15,991,993,99,1,2,30,1,16,91
+Male,Other,Fair/Poor,HS grad,1,18,21,18,18,991,99,3,7,1,1,14,1
+Male,Other,Very Good,College grad,20,18,15,20,15,34,99,3,7,93,1,15,5
+Male,Other,Very Good,College grad,1,18,18,31,991,993,99,3,7,2,1,15,91
+Male,Males Aged 18-25,Excellent,Less HS,20,16,16,16,991,991,99,2,4,30,1,11,91
+Female,Females Aged 18-25,Fair/Poor,Some coll/Assoc,10,12,13,11,991,991,99,1,2,30,1,11,91
+Male,Other,Fair/Poor,Some coll/Assoc,25,12,3,15,12,994,99,1,3,30,1,15,10
+Female,Other,Good,Some coll/Assoc,5,15,15,15,16,991,99,3,7,93,1,13,93
+Male,Males Aged 18-25,Good,Less HS,7,15,18,12,12,993,99,3,7,30,1,9,93
+Male,Other,Good,HS grad,2,21,17,16,991,991,99,1,3,30,1,15,91
+Female,Other,Very Good,Some coll/Assoc,30,11,12,12,991,993,99,3,7,93,1,15,91
+Male,Other,Good,Some coll/Assoc,27,16,17,14,16,993,99,3,7,6,1,15,93
+Female,Other,Fair/Poor,HS grad,30,14,12,11,28,993,99,1,2,30,1,14,93
+Female,Females Aged 12-17,Fair/Poor,12-17yrsold,15,14,11,12,991,991,99,2,3,30,1,5,91
+Male,Males Aged 18-25,Fair/Poor,Some coll/Assoc,30,11,9,11,12,993,99,3,4,93,1,9,93
+Male,Other,Good,HS grad,30,8,12,9,10,991,99,1,2,28,1,15,93
+Male,Males Aged 18-25,Very Good,Some coll/Assoc,20,14,12,11,15,991,99,3,7,93,1,12,93
+Female,Females Aged 18-25,Very Good,HS grad,28,18,18,18,991,991,99,3,7,30,1,10,91
+Female,Other,Fair/Poor,Some coll/Assoc,30,18,15,13,991,991,99,3,7,4,1,15,91
+Male,Other,Good,Less HS,27,14,15,12,14,991,99,1,3,30,1,15,93
+Male,Males Aged 12-17,Very Good,12-17yrsold,3,15,14,15,14,991,8,3,7,10,1,5,20
+Female,Females Aged 12-17,Very Good,12-17yrsold,6,15,15,15,991,993,8,1,3,2,1,5,91
+Female,Females Aged 18-25,Very Good,Some coll/Assoc,5,16,16,16,991,991,99,3,7,93,1,11,91
+Female,Other,Very Good,College grad,2,16,16,16,24,993,99,3,4,2,1,13,93
+Female,Females Aged 18-25,Very Good,HS grad,26,14,15,14,991,993,99,3,7,26,1,7,91
+Female,Females Aged 12-17,Good,12-17yrsold,30,9,14,9,991,991,99,1,2,1,1,3,91
+Female,Females Aged 12-17,Good,12-17yrsold,2,16,10,11,991,991,9,2,4,6,1,5,91
+Female,Other,Good,Some coll/Assoc,1,14,13,13,991,993,99,3,7,3,1,13,91
+Female,Other,Very Good,College grad,30,23,14,16,991,991,99,3,7,93,1,15,91
+Male,Other,Very Good,Less HS,7,15,8,12,10,993,99,2,4,30,1,13,93
+Male,Males Aged 18-25,Very Good,HS grad,25,18,19,18,991,993,99,2,2,27,1,11,91
+Male,Males Aged 18-25,Good,Some coll/Assoc,27,18,18,18,991,991,99,3,7,93,1,9,91
+Female,Other,Fair/Poor,Less HS,1,15,15,15,10,993,99,1,2,93,1,13,93
+Female,Other,Good,College grad,28,17,21,24,991,991,99,3,6,93,1,13,91
+Male,Males Aged 12-17,Very Good,12-17yrsold,5,13,10,15,991,991,99,2,4,1,1,4,91
+Male,Other,Good,Some coll/Assoc,1,16,21,15,991,993,99,3,7,27,1,13,91
+Female,Other,Good,HS grad,16,13,15,12,19,993,99,3,6,30,1,14,93
+Female,Other,Very Good,Some coll/Assoc,28,17,15,14,991,991,99,3,6,93,1,15,91
+Male,Other,Good,Some coll/Assoc,20,15,18,14,14,993,99,3,7,10,1,15,93
+Male,Other,Very Good,Some coll/Assoc,15,16,16,16,991,991,99,3,7,93,1,15,91
+Female,Other,Good,Some coll/Assoc,16,19,17,17,991,991,99,3,7,30,1,15,91
+Male,Other,Good,HS grad,30,12,10,5,12,993,99,2,4,30,1,15,93
+Male,Males Aged 18-25,Good,College grad,1,18,15,19,18,991,99,3,7,93,1,12,93
+Male,Other,Excellent,HS grad,3,18,14,17,22,993,99,2,3,1,1,14,93
+Male,Other,Fair/Poor,Some coll/Assoc,20,16,14,12,991,991,99,3,7,93,1,14,91
+Male,Other,Excellent,College grad,3,17,17,19,19,991,99,3,7,93,1,15,93
+Female,Other,Excellent,College grad,7,16,17,16,991,991,99,2,4,93,1,16,91
+Female,Other,Very Good,Less HS,6,13,13,13,991,991,99,1,2,30,1,14,91
+Male,Other,Very Good,College grad,3,8,10,10,11,991,99,3,7,93,1,15,93
+Male,Other,Excellent,Less HS,30,16,18,15,991,991,99,1,1,1,1,13,91
+Female,Other,Good,Some coll/Assoc,15,38,13,13,991,991,99,3,7,93,1,16,91
+Male,Other,Good,Some coll/Assoc,26,17,17,17,991,993,99,3,6,93,1,15,91
+Male,Other,Good,College grad,29,17,12,16,16,993,99,3,6,5,1,15,93
+Female,Other,Good,Some coll/Assoc,20,17,16,15,15,993,99,3,7,30,1,15,93
+Female,Females Aged 18-25,Very Good,Some coll/Assoc,4,17,19,20,991,991,99,2,4,4,1,10,91
+Male,Males Aged 18-25,Good,HS grad,1,18,16,20,991,991,99,3,7,1,1,9,91
+Male,Males Aged 18-25,Excellent,HS grad,18,18,20,18,991,991,99,2,2,30,1,11,91
+Male,Males Aged 18-25,Good,Some coll/Assoc,30,14,14,14,991,991,99,3,7,1,1,12,91
+Male,Other,Very Good,College grad,8,16,16,14,18,991,99,3,7,93,1,16,93
+Female,Females Aged 18-25,Very Good,Less HS,30,12,14,12,991,993,99,1,1,30,1,11,91
+Male,Males Aged 18-25,Fair/Poor,Less HS,3,17,16,17,991,991,99,1,2,5,1,10,91
+Female,Other,Good,Some coll/Assoc,30,16,15,17,991,993,99,2,2,30,1,14,91
+Female,Females Aged 12-17,Good,12-17yrsold,5,15,13,14,991,991,7,2,3,93,1,5,91
+Male,Males Aged 18-25,Very Good,Some coll/Assoc,4,14,16,15,15,991,99,2,2,4,1,11,93
+Female,Other,Good,Some coll/Assoc,1,15,19,11,991,991,99,3,6,30,1,15,91
+Female,Other,Good,Some coll/Assoc,1,17,20,18,991,991,99,3,4,1,1,15,91
+Male,Other,Very Good,College grad,5,18,18,18,21,991,99,3,7,93,1,14,93
+Male,Other,Very Good,College grad,20,23,16,15,991,991,99,1,1,93,1,16,91
+Male,Other,Fair/Poor,Some coll/Assoc,2,15,12,10,17,991,99,3,4,93,1,16,93
+Male,Males Aged 18-25,Very Good,Less HS,28,12,15,7,15,991,99,1,1,30,1,11,93
+Male,Other,Excellent,College grad,25,21,17,17,16,991,99,3,6,93,1,13,93
+Male,Males Aged 18-25,Good,College grad,5,17,16,18,21,991,99,3,6,93,1,12,93
+Male,Males Aged 18-25,Good,Some coll/Assoc,27,15,15,15,12,17,99,3,5,93,1,10,93
+Male,Other,Very Good,Some coll/Assoc,8,18,19,24,991,991,99,3,6,93,1,15,91
+Male,Males Aged 18-25,Excellent,College grad,4,18,15,16,991,991,99,3,6,93,1,12,91
+Male,Other,Good,Some coll/Assoc,30,19,16,17,19,993,99,3,6,30,1,14,3
+Male,Other,Very Good,HS grad,30,18,15,15,991,991,99,2,2,30,1,15,91
+Female,Females Aged 18-25,Very Good,Some coll/Assoc,20,13,13,17,991,991,99,3,7,93,1,12,91
+Female,Other,Good,College grad,30,15,14,15,16,991,99,2,2,93,1,15,93
+Female,Females Aged 18-25,Very Good,HS grad,25,13,15,16,991,17,99,2,5,30,1,12,91
+Male,Males Aged 18-25,Very Good,Some coll/Assoc,26,17,NA,18,991,991,99,2,2,93,1,9,91
+Male,Males Aged 18-25,Good,Less HS,25,16,15,9,16,993,99,1,2,30,1,12,93
+Male,Other,Good,Some coll/Assoc,3,16,15,15,991,38,99,1,2,30,1,15,91
+Female,Females Aged 18-25,Excellent,Less HS,30,18,16,17,991,991,9,1,1,19,1,7,91
+Female,Females Aged 18-25,Excellent,HS grad,30,15,14,16,991,993,99,1,2,93,1,12,91
+Female,Other,Good,College grad,25,15,NA,17,991,991,99,2,3,93,1,13,91
+Male,Other,Fair/Poor,Some coll/Assoc,30,21,32,16,991,991,99,3,6,93,1,15,91
+Female,Females Aged 12-17,Good,12-17yrsold,30,12,13,12,991,991,99,3,5,10,1,3,91
+Female,Females Aged 18-25,Very Good,Some coll/Assoc,3,15,15,17,991,991,99,1,3,93,1,12,91
+Male,Males Aged 18-25,Good,Less HS,30,15,17,18,991,991,99,3,6,3,1,8,91
+Male,Males Aged 18-25,Very Good,HS grad,25,14,21,16,991,991,99,3,5,6,1,12,91
+Male,Males Aged 18-25,Good,Less HS,30,11,11,11,991,993,99,3,6,30,1,11,91
+Female,Other,Good,HS grad,30,16,21,16,991,991,99,1,1,30,1,13,91
+Male,Other,Good,College grad,15,15,13,12,991,993,99,3,7,93,1,16,91
+Male,Males Aged 18-25,Very Good,HS grad,30,13,13,15,991,993,99,1,3,25,1,7,91
+Male,Other,Good,Less HS,5,10,13,9,991,991,99,2,5,30,1,15,91
+Female,Other,Good,Some coll/Assoc,1,13,16,17,991,991,99,2,6,30,1,15,91
+Male,Other,Very Good,Less HS,29,16,17,16,991,993,99,1,3,4,1,14,91
+Male,Other,Good,HS grad,15,19,22,28,991,991,99,1,2,93,1,15,91
+Female,Other,Good,HS grad,30,18,16,18,991,991,99,2,2,30,1,15,91
+Male,Males Aged 12-17,Fair/Poor,12-17yrsold,4,13,13,15,10,991,99,2,2,13,1,5,93
+Male,Other,Very Good,College grad,8,23,19,23,20,991,99,3,7,3,1,15,93
+Female,Other,Very Good,HS grad,30,17,14,13,35,991,99,1,2,30,1,15,93
+Female,Other,Fair/Poor,Less HS,20,16,18,16,991,991,99,1,4,30,1,13,91
+Female,Other,Good,College grad,8,18,17,18,991,991,99,3,7,93,1,14,91
+Male,Males Aged 18-25,Good,Some coll/Assoc,25,18,19,19,991,991,99,3,6,93,1,9,91
+Female,Other,Good,Some coll/Assoc,18,16,18,16,991,993,99,3,7,30,1,16,91
+Male,Males Aged 18-25,Good,Less HS,30,15,14,15,991,993,99,2,5,30,1,11,91
+Female,Other,Very Good,Some coll/Assoc,25,28,17,22,991,991,99,3,5,93,1,14,91
+Female,Other,Excellent,Less HS,7,15,16,12,991,991,99,1,1,30,1,15,91
+Male,Males Aged 18-25,Very Good,Some coll/Assoc,6,16,16,17,17,991,99,3,6,93,1,10,93
+Male,Other,Very Good,Some coll/Assoc,30,5,7,5,991,991,99,1,1,30,1,15,91
+Female,Other,Fair/Poor,Less HS,10,12,11,12,991,993,99,2,4,30,1,15,91
+Male,Other,Good,Some coll/Assoc,20,11,9,12,16,991,99,3,7,30,1,15,93
+Male,Other,Fair/Poor,Less HS,15,16,16,16,991,991,99,2,2,30,1,15,91
+Female,Females Aged 18-25,Very Good,Some coll/Assoc,10,16,16,17,20,991,99,NA,1,93,1,9,1
+Female,Females Aged 12-17,Very Good,12-17yrsold,4,14,14,14,991,991,99,2,4,93,1,5,91
+Female,Females Aged 18-25,Very Good,College grad,10,15,15,15,991,991,99,3,7,93,1,12,91
+Female,Females Aged 18-25,Good,Less HS,6,16,15,13,991,991,99,1,1,30,1,10,91
+Male,Other,Excellent,Some coll/Assoc,30,23,18,20,21,991,99,3,6,30,1,13,93
+Female,Other,Good,Some coll/Assoc,30,18,16,13,25,991,99,2,4,30,1,13,93
+Female,Other,Very Good,College grad,30,17,16,13,991,993,99,3,7,93,1,15,91
+Male,Males Aged 18-25,Fair/Poor,HS grad,6,12,10,11,991,998,99,2,4,30,1,8,91
+Female,Other,Good,HS grad,25,15,15,13,991,993,99,2,5,30,1,14,91
+Male,Males Aged 12-17,Excellent,12-17yrsold,4,13,12,13,991,991,99,3,5,1,1,5,91
+Male,Males Aged 18-25,Good,Some coll/Assoc,20,15,14,15,15,991,99,1,1,15,1,11,29
+Female,Females Aged 18-25,Very Good,HS grad,10,18,19,17,991,991,99,3,5,1,1,12,91
+Male,Males Aged 18-25,Very Good,Some coll/Assoc,15,16,14,16,18,993,99,3,7,3,1,11,93
+Male,Males Aged 18-25,Good,HS grad,30,14,17,16,991,993,99,2,3,30,1,11,91
+Male,Males Aged 18-25,Good,Some coll/Assoc,1,20,12,20,991,991,2,2,2,1,1,9,91
+Female,Other,Very Good,Less HS,15,20,20,19,991,991,99,1,1,93,1,16,91
+Female,Other,Very Good,College grad,30,10,21,14,14,991,99,3,7,29,1,15,18
+Female,Females Aged 18-25,Excellent,College grad,10,18,18,18,991,993,99,1,1,93,1,12,91
+Male,Males Aged 18-25,Good,HS grad,2,18,21,19,991,991,99,3,4,93,1,12,91
+Male,Males Aged 18-25,Excellent,College grad,28,15,16,18,20,993,99,2,3,2,1,12,93
+Male,Males Aged 18-25,Good,Some coll/Assoc,30,16,15,16,14,991,99,3,7,93,1,10,93
+Male,Males Aged 18-25,Good,Some coll/Assoc,14,17,15,16,991,991,99,1,1,93,1,9,91
+Male,Other,Very Good,HS grad,28,17,16,21,991,991,99,3,7,93,1,16,91
