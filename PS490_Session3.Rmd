@@ -1,0 +1,463 @@
+---
+title: "Session 3"
+author: "PS 490"
+date: ""
+output: 
+  xaringan::moon_reader:
+    seal: true 
+    css: custom_2.css
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
+library(tidyverse)
+library(haven)
+library(distributions3)
+```
+# Objectives for today 
+
+1. Keeping code tidy 
+2. Basic plots in R
+3. Distributions
+
+---
+# Keeping code tidy 
+
+COMMENT YOUR CODE!! Your future self, your coauthors, and replicators will appreciate it.
+
+Comments are written with hashtags #. R will not run anything that comes after one. 
+
+```{r, eval=FALSE}
+# Create a vector with birthdates
+bday <- c(1993,1991,1996,1989)
+# Calculate mean 
+mean(bday)
+```
+
+---
+# Keeping code tidy 
+
+Create sections of code by using four hashtags (or dashes) after your section title. This will make it easier to find your spot on the code (they will get long!).
+
+```{r  out.height="60%", out.width="60%", echo=FALSE}
+knitr::include_graphics("sections.png") 
+```
+
+---
+# Keeping code tidy 
+
+At the top of your code: 
+
+- set your working directory 
+- load your libraries 
+
+---
+# Keeping code tidy 
+
+- use `<-` as your assignment mechanism, NOT `= `
+
+- use spaces between operators, like `=`, `<-`, `~`
+
+- when code is long, hit Enter to make it into several lines
+
+
+---
+# Keeping it tidy 
+
+GOOD: 
+```{r, eval=FALSE}
+# GOOD 
+mod1 <- lm(formula = weight ~ height + age + gender) 
+```
+
+BAD: 
+```{r, eval=FALSE}
+# BAD
+mod1<-lm(formula=weight~height+age+gender)
+```
+
+---
+# Keeping it tidy 
+
+```{r, eval=FALSE}
+# GOOD
+gapminder %>%
+  filter(year > 2000) %>%
+  ggplot(aes(x = gdpPercap, 
+             y = lifeExp)) + 
+  geom_point(alpha = 1) + 
+  labs(x ="GDP Per Capita", 
+       y = "Life Expectancy") +
+  facet_wrap(~continent)
+```
+
+BAD 
+```{r, eval=FALSE}
+gapminder%>%filter(year>2000) %>%ggplot(aes(x=gdpPercap,y=lifeExp))+ geom_point(alpha=1)+labs(x="GDP Per Capita",y = "Life Expectancy")+facet_wrap(~continent)
+```
+
+---
+# Loading our data again
+
+```{r}
+library(readr)
+drugs_data <- read_csv("drugs.csv")
+```
+
+---
+# Exploring variables
+
+Also a good idea to always explore the specific variable you are interested in.
+
+- get a table 
+- get descriptives
+- draw graphs
+- look for: answer choices, outliers, NAs, labels, distribution
+
+---
+# Exploring variables
+
+```{r}
+table(drugs_data$mjage)
+summary(drugs_data$mjage)
+```
+
+---
+# Exploring variables: visualization
+
+Visualization is key! 
+
+You will learn how to do beautiful graphs with ggplot in future weeks, but for quick graphs we can always use Base R:
+
+- Histogram: hist()
+- Scatter plot: plot()
+- Boxplot: boxplot()
+- Bar graph: barplot()
+
+---
+# Histogram
+
+.pull-left[
+```{r, eval = FALSE}
+hist(drugs_data$mjage)
+```
+]
+
+.pull-right[
+```{r, echo = FALSE}
+hist(drugs_data$mjage)
+```
+]
+
+---
+# Boxplot 
+
+.pull-left[
+```{r, eval=FALSE}
+boxplot(drugs_data$mjage ~ drugs_data$health_cond)
+
+# ALT:
+# boxplot(mjage ~ health_cond, data = drugs_data)
+
+```
+]
+
+.pull-right[
+```{r, echo=FALSE}
+boxplot(drugs_data$mjage ~ drugs_data$health_cond)
+```
+]
+
+---
+# Bar graph
+
+.pull-left[
+```{r, eval= FALSE}
+
+health_cond_freq <- table(drugs_data$health_cond)
+
+barplot(health_cond_freq)
+```
+]
+
+.pull-right[
+```{r, echo=FALSE}
+health_cond_freq <- table(drugs_data$health_cond)
+barplot(health_cond_freq)
+```
+
+]
+
+---
+# Scatter plot 
+.pull-left[
+```{r, eval=FALSE}
+plot(drugs_data$mjage, drugs_data$cigtry)
+```
+]
+
+.pull-right[
+```{r, echo=FALSE}
+plot(drugs_data$mjage, drugs_data$cigtry)
+```
+]
+
+---
+# Making plots nicer 
+
+These plots can look nicer: check out the help file for each plot type to see how we can adjust it to add color, change labels, etc. 
+
+Look at the help for .green[barplot] and see if you can figure out how to:
+
+- add a title 
+- change the bars to a horizontal position 
+
+
+---
+class: inverse, middle, center
+# Probabilities in R
+
+---
+# Base R
+
+```{r  out.height="80%", out.width="100%", echo=FALSE}
+knitr::include_graphics("navarro.png") 
+```
+- `q_` is inverse of `p_`, i.e. inverse of CDF. We give it a cumulative probability and it spits out at which value of X we should get this probability
+
+.footnote[Navarro, [Learning Statistics with R](https://learningstatisticswithr.com/) p.287]
+
+---
+# Normal distribution 
+
+Specifically, let's work with a Standard Normal (mean = 0, sd = 1)
+
+To get a CDF associated with a specific x:
+
+pnorm() --> this is what we get from the Z tables!
+
+```{r}
+pnorm(1.96, mean = 0, sd = 1)
+```
+---
+# Normal distribution 
+
+That means that 97.5% of obs are lower than 1.96. What % of obs is greater? 
+
+Option 1:
+```{r}
+1-pnorm(1.96, mean = 0, sd = 1)
+```
+Option 2: 
+```{r}
+pnorm(1.96, mean = 0, sd = 1, lower.tail = FALSE)
+```
+---
+# Normal distribution 
+
+With qnorm() we can do the inverse procedure: get the x corresponding to a given quantile.  How large will by Z have to be so that I can reject the null at a 95% confidence level? 
+
+```{r}
+qnorm(.975, mean = 0, sd = 1)
+```
+Z score for 50th quantile? 
+
+--
+```{r}
+qnorm(.5, mean = 0, sd = 1)
+```
+
+---
+# Getting Probabilities
+```{r echo=F,  fig.width = 14 ,fig.height = 6}
+grid <- seq(-3,3, length.out = 3000)
+our_normal <- Normal(mu=0, sigma=1)
+density <- pdf(Normal(), grid)
+
+data <- tibble(Support = grid, Probability = density)
+
+p_grid <- 1.2
+
+
+data <- data %>% 
+  mutate(color_cdf=case_when(
+    grid <= p_grid ~ "#0A782D",
+    grid > p_grid ~ "#2A96F5"
+                            ),
+    color_pdf = case_when(
+      grid == p_grid ~ "#0A782D",
+    grid != p_grid ~ "#2A96F5"
+    ), 
+    reject = case_when(
+      grid <= p_grid ~ density, 
+      grid > p_grid ~ 0
+    )
+        )
+
+
+# PDF plot
+# 
+
+pdf_plot<- ggplot(data=data, aes(fill = color_cdf)) +
+  geom_line(aes(x=grid, y=density)) +
+  geom_area(aes(grid, reject, alpha = 0.2))+
+  theme_minimal() +
+  theme(legend.position = "none")+
+  labs(
+    title = "Probability mass function",
+    y = "Probability",
+    x = "Support",
+    fill = "Probability"
+  )+
+  #geom_vline(xintercept = 1.2, color="#0A782D", size=2)+
+    scale_fill_identity(guide = "legend", labels = c(expression(X == x), ""))
+pdf_plot
+
+# CDF plot
+
+#cdf_plot <- ggplot(data=data) +
+#  geom_line(aes(x=grid, y=density, fill=color_cdf)) +
+#  theme_minimal() +
+  #theme(legend.position = "none")+
+#  labs(
+#    title = "Cumulative Distribution Function",
+#    y = "Probability",
+#    x = "Support",
+ #   fill = "Probability"
+ # )+
+#    scale_fill_identity(guide = "legend", labels = c(expression(x <= x), expression(x > x)))
+
+#plot_grid(pdf_plot, cdf_plot)
+
+```
+---
+# Base R
+.pull-left[
+```{r echo=F}
+pdf_plot
+```
+
+]
+
+
+.pull-right[
+```{r}
+pnorm(1.96, mean=0, sd=1)
+qnorm(0.975, mean=0, sd=1)
+```
+]
+
+---
+# Binomial distribution 
+
+Find the pr. of x successes 
+
+Coin toss: probability that I will get .green[*exactly*] 3 heads (#successes) in 4 tosses (#trials)
+
+```{r}
+dbinom(x = 3, size = 4, p = 0.5)
+```
+
+---
+# Binomial distribution
+
+What is the probability that it will get .green[*at most*] 3 heads? 
+
+This equals: pr of no heads + pr 1 head + pr 2 heads + pr 3 heads
+
+```{r}
+pbinom(3, size = 4, p= 0.5)
+```
+
+Check:
+```{r}
+dbinom(0, size = 4, p= 0.5) + dbinom(1, size = 4, p= 0.5) + dbinom(2, size = 4, p= 0.5) + dbinom(3, size = 4, p= 0.5)
+```
+
+---
+# Binomial distribution 
+
+How many heads would I have to get to get a 50% success rate? 
+
+```{r}
+qbinom(0.5, size = 4, p = 0.5)
+```
+
+---
+class: inverse
+
+# Using Distributions3 package 
+
+Requires us to create an object with the distribution first.
+But names of functions are much more intuitive! 
+
+dnorm() --> pdf()
+
+pnorm() --> cdf()
+
+qnorm() --> quantile()
+
+---
+# Normal distribution 
+
+```{r}
+our_normal <- Normal(mu = 0, sigma = 1)
+cdf(our_normal, 1.96)
+quantile(our_normal, 0.975)
+```
+
+---
+# Binomial distributions
+
+```{r}
+fair_coin <- Binomial(size = 4, p=0.5)
+pdf(fair_coin, 3)
+```
+Probability of at least 3 heads: 
+
+```{r}
+cdf(fair_coin, 3)
+
+pdf(fair_coin,0) + pdf(fair_coin,1) + pdf(fair_coin, 2) + pdf(fair_coin, 3)
+```
+
+---
+class: inverse
+# Practice 
+
+.small[
+1. From last class: Explore the variable cigtry. Are there any outliers? Plot this variable. 
+
+2. Draw a boxplot between education level (`educ`) and age at which they tried smokeless cigarettes (`smklsstry`). Does this look strange? Why? 
+
+3. Suppose the height of males at a certain school is normally distributed with a mean of μ=70 inches and a standard deviation of σ = 2 inches. Approximately what percentage of males at this school are taller than 74 inches?
+
+4. Bob makes 60% of his free-throw attempts. If he shoots 12 free throws, what is the probability that he makes exactly 10?
+
+5. Suppose the height of plants in a certain region is normally distributed with a mean of μ=13 inches  and a standard deviation of σ = 2 inches. Approximately what percentage of plants in this region are between 10 and 14 inches tall?
+]
+---
+class: inverse
+# Practice 
+
+```{r}
+pnorm(74, mean=70, sd=2, lower.tail=FALSE)
+# OR
+# 1- pnorm(74, mean=70, sd=2)
+```
+
+```{r}
+dbinom(x = 10, size = 12, p = 0.6)
+```
+
+```{r}
+pnorm(14, mean=13, sd=2) - pnorm(10, mean=13, sd=2)
+```
+
+
